@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>python-playground · 项目入口</title>
+    <style>
+        * { box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f5f7fa;
+            color: #2c3e50;
+            margin: 0;
+            padding: 48px 20px;
+            line-height: 1.7;
+        }
+        .wrap { max-width: 760px; margin: 0 auto; }
+        h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin: 0 0 6px;
+            letter-spacing: .5px;
+        }
+        .sub { color: #7f8c9b; font-size: 14px; margin-bottom: 36px; }
+        .card {
+            background: #fff;
+            border: 1px solid #e3e8ef;
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin-bottom: 16px;
+            transition: box-shadow .2s, transform .2s;
+        }
+        .card:hover {
+            box-shadow: 0 6px 20px rgba(44, 62, 80, .08);
+            transform: translateY(-1px);
+        }
+        .card h2 {
+            font-size: 17px;
+            font-weight: 600;
+            margin: 0 0 8px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .card p { margin: 0; font-size: 14px; color: #5c6b7a; }
+        a.card { text-decoration: none; color: inherit; display: block; }
+        .tag {
+            display: inline-block;
+            font-size: 11px;
+            padding: 2px 8px;
+            border-radius: 20px;
+            background: #eaf3ff;
+            color: #2f74d0;
+            font-weight: 500;
+            vertical-align: middle;
+        }
+        .tag.py { background: #fff4e5; color: #b3720c; }
+        .arrow { float: right; color: #b9c3cf; font-size: 20px; line-height: 1.4; }
+        footer {
+            margin-top: 36px;
+            padding-top: 18px;
+            border-top: 1px solid #e3e8ef;
+            font-size: 12.5px;
+            color: #9aa6b2;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+
+    <h1>python-playground</h1>
+    <div class="sub">个人 Python 小工具试验场 · 静态演示与脚本合集</div>
+
+    <a class="card" href="./test.htm">
+        <span class="arrow">→</span>
+        <h2>文本框悬浮显示字体信息 <span class="tag">在线演示</span></h2>
+        <p>纯前端页面，输入文本后悬浮即可查看字体相关属性。无需安装任何环境。</p>
+    </a>
+
+    <div class="card">
+        <h2>dedup_excel.py <span class="tag py">Python 脚本</span></h2>
+        <p>按指定列去除 Excel 重复行，仅保留唯一记录，支持自动生成输出文件名。<br>
+           <code>python dedup_excel.py -i input.xlsx -o output.xlsx -c "姓名,部门"</code></p>
+    </div>
+
+    <div class="card">
+        <h2>test.py <span class="tag py">Python 脚本</span></h2>
+        <p>总和差值交互计算器：结果 = A × 28.97 + (sum − A) × 21.72，命令行循环计算。<br>
+           <code>python test.py</code></p>
+    </div>
+
+    <footer>
+        <a href="https://github.com/JunX1226/python-playground" target="_blank" rel="noopener">GitHub 仓库</a>
+    </footer>
+
+</div>
+</body>
+</html>
